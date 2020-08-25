@@ -1,0 +1,32 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "new",
+	"description": "小程序模板",
+	"appid": "wx3c040d8bd3eee238",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": true,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.12.1",
+	"condition": {}
+}
