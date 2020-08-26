@@ -1,0 +1,13 @@
+// 为了让vscode识别配置的相对路径
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/apis/*": ["./src/servers/api/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/assets/*": ["./src/assets/*"]
+    }
+  }
+}

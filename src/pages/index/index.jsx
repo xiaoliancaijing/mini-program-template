@@ -1,37 +1,23 @@
-import Taro, { useEffect, useRef } from "@tarojs/taro";
-import { observer } from "@tarojs/mobx";
-import store from "../../store/index";
-import { useDebounce, useThrottle } from "../../utils/dateFormat.js";
-import "./index.less";
+/*
+ * @Author: 郑晶
+ * @Date: 2020-08-26 12:50:21
+ * @LastEditTime: 2020-08-26 18:37:25
+ * @LastEditors: 郑晶
+ * @Description: 首页
+ */
+import React from "react";
+import { View, Text } from "@tarojs/components";
+import { AtButton } from "taro-ui";
+
+import "./index.scss";
 
 function Index() {
-  useEffect(() => {
-    console.log("index开始");
-    return () => {
-      console.log("index结束");
-    };
-  }, []);
-  const ref = useRef(null);
-  const click = () => {
-    console.log("index");
-  };
   return (
     <View>
-      <Text>{state}</Text>
-      <Button onClick={useDebounce(click, 4000, ref)}>Index</Button>
-      <Button
-        onClick={() => {
-          if (ref.current.timer) {
-            console.log("清除了");
-            clearTimeout(ref.current.timer);
-          }
-          Taro.navigateTo({ url: "/pages/demo/index" });
-        }}
-      >
-        跳转
-      </Button>
+      <Text>大哥</Text>
+      <AtButton type="primary">按钮文案</AtButton>
     </View>
   );
 }
 
-export default observer(Index);
+export default Index;
