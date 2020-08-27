@@ -1,2 +1,12 @@
-@import "~taro-ui/dist/style/components/button.scss";
-@import "~taro-ui/dist/style/components/loading.scss";
+@import '~taro-ui/dist/style/components/tab-bar.scss';
+@import '~taro-ui/dist/style/components/badge.scss';
+@import '~taro-ui/dist/style/components/icon.scss';
+page {
+	width: 100%;
+	height: 100%;
+	.index {
+		width: 100%;
+		height: 100%;
+		background: pink;
+	}
+}
