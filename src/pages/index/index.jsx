@@ -1,26 +1,29 @@
 /*
  * @Author: 郑晶
  * @Date: 2020-08-26 12:50:21
- * @LastEditTime: 2020-08-27 18:12:47
+ * @LastEditTime: 2020-08-28 15:00:52
  * @LastEditors: 郑晶
  * @Description: 首页
  */
 import React, { useEffect, useState } from 'react';
-import Taro from '@tarojs/taro';
-import { View } from '@tarojs/components';
+import { View, Text } from '@tarojs/components';
+import UploadImage from '@/components/uploadImage';
 
 import './index.scss';
 
-function Index(props) {
-	let [h, setH] = useState(0);
-	useEffect(() => {
-		setH(
-			Taro.getSystemInfoSync().safeArea.height * 2 -
-				Taro.getSystemInfoSync().statusBarHeight * 2
-		);
-		console.log(Taro.getSystemInfoSync());
-	}, []);
-	return <View className="index">大哥</View>;
+function Index() {
+	let filesObj = {
+		files: [],
+		multiple: false,
+		count: 5,
+		length: 4,
+	};
+	return (
+		<View className="index">
+			<Text>首页</Text>
+			<UploadImage {...filesObj} />
+		</View>
+	);
 }
 
 export default Index;

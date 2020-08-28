@@ -2,11 +2,11 @@
  * @Author: 郑晶
  * @Date: 2020-08-26 19:29:50
  * @LastEditors: 郑晶
- * @LastEditTime: 2020-08-27 19:03:35
+ * @LastEditTime: 2020-08-28 10:42:49
  * @Descripttion:
  */
 export default {
-	pages: ['pages/home/index', 'pages/index/index', 'pages/classify/index', 'pages/mine/index'],
+	pages: ['pages/index/index', 'pages/home/index', 'pages/classify/index', 'pages/mine/index'],
 	window: {
 		backgroundTextStyle: 'light',
 		navigationBarBackgroundColor: '#fff',
