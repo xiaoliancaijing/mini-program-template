@@ -39,6 +39,7 @@
     "@tarojs/react": "3.0.7",
     "@tarojs/runtime": "3.0.7",
     "@tarojs/taro": "3.0.7",
+    "js-md5": "^0.7.3",
     "mobx": "^4.8.0",
     "mobx-react": "^6.1.4",
     "react": "^16.10.0",
