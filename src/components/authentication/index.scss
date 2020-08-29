@@ -1,0 +1,10 @@
+.btn {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	&::after {
+		border: none;
+		border-radius: 0;
+	}
+}

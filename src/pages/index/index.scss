@@ -8,6 +8,31 @@ page {
 		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
-		border: 5px solid pink;
+		.box {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 100px;
+			background: red;
+			.box1 {
+				width: 40%;
+				height: 100px;
+				background: pink;
+			}
+			.box2 {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100px;
+				background: powderblue;
+				Text {
+					font-size: 50px;
+					line-height: 18px;
+					color: pink;
+				}
+			}
+		}
 	}
 }
