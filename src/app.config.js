@@ -2,7 +2,7 @@
  * @Author: 郑晶
  * @Date: 2020-08-26 19:29:50
  * @LastEditors: 郑晶
- * @LastEditTime: 2020-08-29 17:25:00
+ * @LastEditTime: 2020-08-29 18:02:34
  * @Descripttion:
  */
 export default {
@@ -43,6 +43,6 @@ export default {
 			},
 		],
 	},
-	//地址是绝对地址
+	//地址是相对地址 ./components/iconfont/weapp/weapp
 	usingComponents: Object.assign({ iconfont: './components/iconfont/weapp/weapp' }),
 };
