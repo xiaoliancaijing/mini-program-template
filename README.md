@@ -2,7 +2,7 @@
  * @Author: 郑晶
  * @Date: 2020-08-26 11:32:53
  * @LastEditors: 郑晶
- * @LastEditTime: 2020-08-28 16:18:23
+ * @LastEditTime: 2020-08-29 17:27:48
  * @Descripttion:
 -->
 
@@ -14,7 +14,7 @@
 
 -   taro-ui
 -   七牛存储空间
--   阿里图标
+-   阿里图标：例：<IconFont className="icon" size={100} name="xingzhuang1" />
 
 > 3.组件列表
 

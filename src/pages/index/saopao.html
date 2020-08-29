@@ -1,0 +1,31 @@
+<!--
+ * @Author: 郑晶
+ * @Date: 2020-08-29 11:04:07
+ * @LastEditors: 郑晶
+ * @LastEditTime: 2020-08-29 11:06:57
+ * @Descripttion: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		大哥
+		<script>
+			let data = { name: 'tom', age: 10 };
+			Object.defineProperty(data, 'name', {
+				get: function (e) {
+					console.log(e, '获取对象属性');
+				},
+				set: function (e) {
+					console.log(e, '设置对象属性');
+				},
+			});
+			data.name; // 读取对象属性时， 会走进get方法
+			data.name = 'jack'; // 设置对象属性时，会走进set方法
+		</script>
+	</body>
+</html>
