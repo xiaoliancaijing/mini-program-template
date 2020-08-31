@@ -2,7 +2,7 @@
  * @Author: 郑晶
  * @Date: 2020-08-26 19:29:50
  * @LastEditors: 郑晶
- * @LastEditTime: 2020-08-31 15:42:00
+ * @LastEditTime: 2020-08-31 15:53:39
  * @Descripttion:全局配置
  */
 export default {
@@ -15,7 +15,7 @@ export default {
 	},
 	tabBar: {
 		// 使用custom-tab-bar
-		custom: false,
+		custom: true,
 		color: '#8a8a8a',
 		selectedColor: '#1296db',
 		backgroundColor: '#fff',

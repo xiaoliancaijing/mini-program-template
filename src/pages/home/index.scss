@@ -15,8 +15,8 @@ page {
 			width: 100%;
 			height: calc(100% - 50px);
 			// 自定义tabbar时减去底部高度
-			// height: calc(#{'100% - 150px'} - constant(safe-area-inset-bottom));
-			// height: calc(#{'100% - 150px'} - env(safe-area-inset-bottom));
+			height: calc(#{'100% - 150px'} - constant(safe-area-inset-bottom));
+			height: calc(#{'100% - 150px'} - env(safe-area-inset-bottom));
 			background: skyblue;
 		}
 		.box1 {

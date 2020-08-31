@@ -1,10 +1,9 @@
 /*
  * @Author: 郑晶
  * @Date: 2020-08-26 12:50:21
- * @LastEditTime: 2020-08-31 11:53:53
+ * @LastEditTime: 2020-08-31 16:29:40
  * @LastEditors: 郑晶
- * @Description: 自定义底部导航（目前this.$scope undefined在3.0.5、3.0.7版本存在，加上跳转报错，除非使用微信小程序原生组件）
- * 此文件名称、位置一律不能改！
+ * @Description: 自定义底部导航,此文件名称、位置一律不能改！
  */
 import Taro from '@tarojs/taro';
 import React, { Component } from 'react';
@@ -15,11 +14,12 @@ import classifyIcon from '@/assets/images/tabs/classify.png';
 import classifydIcon from '@/assets/images/tabs/classifyd.png';
 import mineIcon from '@/assets/images/tabs/mine.png';
 import minedIcon from '@/assets/images/tabs/mined.png';
+import { observer } from 'mobx-react';
+import usersStore from '../store/users';
 import './index.scss';
 
 class customTabBar extends Component {
 	state = {
-		selected: 0,
 		list: [
 			{
 				pagePath: '/pages/home/index',
@@ -42,24 +42,16 @@ class customTabBar extends Component {
 		],
 	};
 
-	switchTab = item => {
+	switchTab = (item, i) => {
 		const url = item.pagePath;
-		console.log(url);
 		Taro.switchTab({
 			url,
 			success: () => {
-				console.log('成功了啊');
+				//使用mobx监听位置
+				usersStore.tabIndexChange(i);
 			},
 		});
 	};
-
-	componentDidMount() {
-		console.log(this, 'ind');
-		this.setState({
-			selected: 1,
-		});
-	}
-
 	// 自定义 tabBar的页面
 	render() {
 		let { list } = this.state;
@@ -67,9 +59,15 @@ class customTabBar extends Component {
 			<View className="tab-bar">
 				{list.map((e, i) => {
 					return (
-						<View className="tab-item" onClick={() => this.switchTab(e)} key={i}>
-							<Image src={e.iconPath} />
-							<Text>{e.text}</Text>
+						<View className="tab-item" onClick={() => this.switchTab(e, i)} key={i}>
+							<Image
+								src={
+									i == usersStore.users.tabIndex ? e.selectedIconPath : e.iconPath
+								}
+							/>
+							<Text className={i == usersStore.users.tabIndex && 'selText'}>
+								{e.text}
+							</Text>
 						</View>
 					);
 				})}
@@ -77,4 +75,4 @@ class customTabBar extends Component {
 		);
 	}
 }
-export default customTabBar;
+export default observer(customTabBar);
