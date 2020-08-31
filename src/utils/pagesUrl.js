@@ -1,9 +1,9 @@
 /*
  * @Author: 郑晶
- * @Date: 2020-06-18 15:53:04
+ * @Date: 2020-08-31 16:46:02
  * @LastEditors: 郑晶
- * @LastEditTime: 2020-08-31 12:00:44
- * @Descripttion:
+ * @LastEditTime: 2020-08-31 16:46:50
+ * @Descripttion:页面跳转功能集合
  */
 import Taro from '@tarojs/taro';
 /**

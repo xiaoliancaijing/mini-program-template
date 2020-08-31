@@ -5,5 +5,13 @@
 	"platforms": ["weapp"],
 	"use_rpx": true,
 	"trim_icon_prefix": "icon",
-	"default_icon_size": 18
+	"default_icon_size": 18,
+	"请看下方注释": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+	"请直接复制iconfont官网提供的项目链接": "symbol_url",
+	"根据iconfont图标生成的组件存放的位置。每次生成组件之前，该文件夹都会被清空": "save_dir",
+	"如果您的项目使用Typescript编写，请设置为true。这个选项将决定生成的图标组件是.tsx还是.js后缀": "use_typescript",
+	"选择需要支持的平台，默认是*，意味着所有平台都需要支持.weapp: 微信 | swan: 百度 | alipay: 支付宝 | tt: 字节跳动": "platforms",
+	"是否使用尺寸单位rpx还是普通的像素单位px。默认值为true，与Taro保持一致的缩放。您也可以设置为false，强制使用px": "use_rpx",
+	"如果你的图标有通用的前缀，而你在使用的时候又不想重复去写，那么可以通过这种配置这个选项把前缀统一去掉": "trim_icon_prefix",
+	"我们将为每个生成的图标组件加入默认的字体大小，当然，你也可以通过传入props的方式改变这个size值": "default_icon_size"
 }
