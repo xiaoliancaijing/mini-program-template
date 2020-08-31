@@ -1,10 +1,10 @@
-// ScrollView;
 /*
  * @Author: 郑晶
  * @Date: 2020-08-26 12:50:21
- * @LastEditTime: 2020-08-27 19:05:45
+ * @LastEditTime: 2020-08-31 11:53:53
  * @LastEditors: 郑晶
  * @Description: 自定义底部导航（目前this.$scope undefined在3.0.5、3.0.7版本存在，加上跳转报错，除非使用微信小程序原生组件）
+ * 此文件名称、位置一律不能改！
  */
 import Taro from '@tarojs/taro';
 import React, { Component } from 'react';

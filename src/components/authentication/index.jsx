@@ -1,3 +1,10 @@
+/*
+ * @Author: 郑晶
+ * @Date: 2020-08-26 19:29:50
+ * @LastEditors: 郑晶
+ * @LastEditTime: 2020-08-31 11:59:17
+ * @Descripttion:获取手机号demo
+ */
 import React, { useEffect, useState } from 'react';
 import Taro from '@tarojs/taro';
 import { View, Button } from '@tarojs/components';

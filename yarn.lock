@@ -1285,6 +1285,27 @@
     webpack-format-messages "^2.0.5"
     yauzl "2.10.0"
 
+"@tarojs/mobx-common@^2.2.10":
+  version "2.2.10"
+  resolved "https://registry.npm.taobao.org/@tarojs/mobx-common/download/@tarojs/mobx-common-2.2.10.tgz#c6c152ba7e714727d088055bd2190cf0712f7d33"
+  integrity sha1-xsFSun5xRyfQiAVb0hkM8HEvfTM=
+
+"@tarojs/mobx-h5@^2.2.10":
+  version "2.2.10"
+  resolved "https://registry.npm.taobao.org/@tarojs/mobx-h5/download/@tarojs/mobx-h5-2.2.10.tgz#0c74ecbf9b99c33deeda11866279b3fda3d9352f"
+  integrity sha1-DHTsv5uZwz3u2hGGYnmz/aPZNS8=
+  dependencies:
+    "@tarojs/mobx-common" "^2.2.10"
+    "@tarojs/taro-h5" "^2.2.10"
+
+"@tarojs/mobx@^2.2.10":
+  version "2.2.10"
+  resolved "https://registry.npm.taobao.org/@tarojs/mobx/download/@tarojs/mobx-2.2.10.tgz#ce7fbc7748e38246290055a6c10637bd29066847"
+  integrity sha1-zn+8d0jjgkYpAFWmwQY3vSkGaEc=
+  dependencies:
+    "@tarojs/mobx-common" "^2.2.10"
+    "@tarojs/taro" "^2.2.10"
+
 "@tarojs/react@3.0.8":
   version "3.0.8"
   resolved "https://registry.npm.taobao.org/@tarojs/react/download/@tarojs/react-3.0.8.tgz#bf2d1e916b7adc0b012949a63d98ab3806963b10"
@@ -1341,6 +1362,17 @@
     unfetch "^4.1.0"
     whatwg-fetch "^2.0.4"
 
+"@tarojs/taro-h5@^2.2.10":
+  version "2.2.13"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-2.2.13.tgz#285bfe5c37d21a23046c33831f5989764f907dbc"
+  integrity sha1-KFv+XDfSGiMEbDODH1mJdk+Qfbw=
+  dependencies:
+    base64-js "^1.3.0"
+    jsonp-retry "^1.0.3"
+    mobile-detect "^1.4.2"
+    raf "^3.4.1"
+    whatwg-fetch "^2.0.4"
+
 "@tarojs/taro-loader@3.0.8":
   version "3.0.8"
   resolved "https://registry.npm.taobao.org/@tarojs/taro-loader/download/@tarojs/taro-loader-3.0.8.tgz#4ef5ed06236e63914ccdf724dff40de49b3722f8"
@@ -1355,6 +1387,18 @@
   dependencies:
     "@tarojs/api" "3.0.8"
     "@tarojs/taro-h5" "3.0.8"
+
+"@tarojs/taro@^2.2.10":
+  version "2.2.13"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-2.2.13.tgz#1e4702a60a36c9ad4725809a170d6b739b73171b"
+  integrity sha1-HkcCpgo2ya1HJYCaFw1rc5tzFxs=
+  dependencies:
+    "@tarojs/utils" "2.2.13"
+
+"@tarojs/utils@2.2.13":
+  version "2.2.13"
+  resolved "https://registry.npm.taobao.org/@tarojs/utils/download/@tarojs/utils-2.2.13.tgz#ac452d0743a6dee494ce8bfe529f904aa3e2c6ad"
+  integrity sha1-rEUtB0Om3uSUzov+Up+QSqPixq0=
 
 "@tarojs/webpack-runner@3.0.8":
   version "3.0.8"

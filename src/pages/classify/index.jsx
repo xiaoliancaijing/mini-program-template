@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from '@tarojs/components';
+import { observer } from 'mobx-react';
 
 import './index.scss';
 class Classify extends Component {
@@ -12,4 +13,4 @@ class Classify extends Component {
 	}
 }
 
-export default Classify;
+export default observer(Classify);
